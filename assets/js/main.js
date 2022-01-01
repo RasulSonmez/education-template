@@ -32,3 +32,24 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+/*===== ACTIVE AND REMOVE MENU =====*/
+
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll(".navbar__link");
+const menuLength = menuItem.length;
+for (let i = 0; i < menuLength; i++) {
+  if (menuItem[i].href === currentLocation) {
+    menuItem[i].className = "navbar__link active-link";
+  }
+}
+
+/* const activePage = window.location.pathname;
+console.log(activePage);
+const navLinks = document.querySelectorAll(".nav__link").forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add("active-link");
+    console.log(link);
+  }
+});
+ */

@@ -134,20 +134,20 @@ section {
   color: var(--pink);
 }
 
-.header .navbar__list {
+.navbar__list {
   list-style: none;
 }
 
-.header .navbar__item {
+.navbar__item {
   position: relative;
   float: left;
 }
 
-.header .navbar__item:hover ul {
+.navbar__item:hover ul {
   display: block;
 }
 
-.header .navbar__item ul {
+.navbar__item ul {
   position: absolute;
   left: 0;
   width: 20rem;
@@ -155,18 +155,18 @@ section {
   display: none;
 }
 
-.header .navbar__item ul li {
+.navbar__item ul li {
   width: 100%;
 }
 
-.header .navbar__link {
+.navbar__link {
   padding: 2rem;
   display: block;
   font-size: 1.7rem;
   color: var(--white);
 }
 
-.header .navbar__link:hover {
+.navbar__link:hover {
   background: var(--pink);
 }
 
@@ -175,6 +175,10 @@ section {
   color: var(--white);
   font-size: 2.5rem;
   display: none;
+}
+
+.active-link {
+  background: var(--pink);
 }
 
 .home {

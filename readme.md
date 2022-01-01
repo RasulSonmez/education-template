@@ -10,7 +10,7 @@
 - Developed first with the Mobile First methodology, then for desktop.
 - It contains a Header, Home, About,Contact, Blog, Courses, Teacher and Footer.
 
-### [Live Website](https://lawyer-website-onepage.netlify.app/)
+### [Live Website](https://education-website-rs.netlify.app/)
 
 ## Used packages cdn
 

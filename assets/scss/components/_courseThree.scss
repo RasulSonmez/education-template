@@ -1,0 +1,92 @@
+//--COURSE THREE--//
+.courseThree {
+  @include grid(31rem);
+
+  &__box {
+    text-align: center;
+    overflow: hidden;
+
+    &:hover .courseThree__video video {
+      transform: scale(1.1);
+    }
+  }
+
+  &__video {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+
+    video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 6rem;
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      border-radius: 50%;
+      background: var(--white);
+      color: var(--black);
+      pointer-events: none;
+      z-index: 10;
+    }
+  }
+
+  &__content {
+    padding-top: 1rem;
+
+    h3 {
+      font-size: 1.7rem;
+      color: var(--black);
+      padding: 0.5rem 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: var(--light-color);
+    }
+  }
+}
+
+.main-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  #close-vid {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 6rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  video {
+    width: 80%;
+    border: 0.5rem solid var(--white);
+    border-radius: 0.5rem;
+  }
+}

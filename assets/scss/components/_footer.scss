@@ -1,0 +1,51 @@
+//--FOOTER--//
+
+.footer {
+  background: var(--light-bg);
+
+  &__box-container {
+    @include grid(25rem);
+  }
+
+  &__box {
+    h3 {
+      font-size: 2.2rem;
+      padding: 1rem 0;
+      color: var(--black);
+    }
+
+    a {
+      display: block;
+      font-size: 1.4rem;
+      padding: 1rem 0;
+      color: var(--light-color);
+
+      &:hover {
+        color: var(--pink);
+
+        i {
+          padding-right: 2rem;
+        }
+      }
+
+      i {
+        color: var(--pink);
+        padding-right: 0.5rem;
+      }
+    }
+  }
+
+  &__credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 1rem;
+    color: var(--light-color);
+    border-top: var(--border);
+
+    span {
+      color: var(--pink);
+    }
+  }
+}

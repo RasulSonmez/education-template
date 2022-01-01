@@ -1,0 +1,32 @@
+//--HOME--//
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  &__image {
+    flex: 1 1 42rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    flex: 1 1 42rem;
+
+    h3 {
+      color: var(--black);
+      font-size: 5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: var(--light-colo);
+      padding: 1rem 0;
+      line-height: 2.5;
+    }
+  }
+}

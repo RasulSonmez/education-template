@@ -1,0 +1,76 @@
+//--TEACHER--//
+.teachers {
+  @include grid(27rem);
+
+  &__box {
+    text-align: center;
+    overflow: hidden;
+
+    &:hover .teachers__image {
+      .teachers__share {
+        transform: translateY(0);
+
+        a {
+          transform: translateY(-1rem);
+          opacity: 1;
+          transition: transform 0.2s 0.2s;
+        }
+      }
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    height: 32rem;
+    width: 100%;
+    position: relative;
+    border-radius: 1rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__share {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10;
+    overflow: hidden;
+    transform: translateY(-100%);
+
+    a {
+      font-size: 2.5rem;
+      margin: 2rem 1.5rem;
+      color: var(--white);
+      transform: translateY(5rem);
+      opacity: 0;
+
+      &:hover {
+        color: var(--pink);
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 1rem;
+
+    h3 {
+      font-size: 2rem;
+      color: var(--black);
+    }
+
+    span {
+      color: var(--light-color);
+      font-size: 1.5rem;
+    }
+  }
+}

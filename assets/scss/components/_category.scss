@@ -1,0 +1,22 @@
+//--CATEGORY--//
+
+.category {
+  @include grid(16rem);
+
+  &__box {
+    border-radius: 1rem;
+    background: var(--light-bg);
+    padding: 4rem 3rem;
+    text-align: center;
+
+    img {
+      height: 7rem;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-size: 1.7rem;
+      color: var(--black);
+    }
+  }
+}

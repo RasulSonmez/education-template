@@ -1,0 +1,57 @@
+//--BLOG--//
+.blog {
+  @include grid(31rem);
+
+  &__image {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__content {
+    padding: 2rem;
+    background: var(--light-bg);
+
+    h3 {
+      font-size: 1.7rem;
+      padding: 0.5rem 0;
+      color: var(--black);
+    }
+
+    p {
+      padding: 1rem 0;
+      font-size: 1.4rem;
+      line-height: 2.5;
+      color: var(--light-color);
+    }
+  }
+
+  &__icons {
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      font-size: 1.4rem;
+      color: var(--light-color);
+
+      &:hover {
+        color: var(--blue);
+      }
+
+      i {
+        padding-right: 0.5rem;
+        color: var(--blue);
+      }
+    }
+  }
+}

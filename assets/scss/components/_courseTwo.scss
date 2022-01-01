@@ -1,0 +1,64 @@
+//--COURSE TWO--//
+.courseTwo {
+  @include grid(31rem);
+
+  &__box {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--light-bg);
+  }
+  &__image {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    img {
+      height: 22rem;
+    }
+  }
+
+  &__content {
+    span {
+      font-size: 1.4rem;
+      color: var(-pink);
+      background: var(--light-pink);
+      padding: 0.5rem 1rem;
+    }
+
+    h3 {
+      color: var(--black);
+      line-height: 2;
+      margin-top: 1.5rem;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: var(--light-color);
+      line-height: 2.5;
+      padding: 1rem 0;
+    }
+  }
+
+  &__icons {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: var(--border);
+
+    a {
+      font-size: 1.4rem;
+      color: var(--light-color);
+
+      &:hover {
+        color: var(--pink);
+      }
+
+      i {
+        padding-right: 0.5rem;
+        color: var(--pink);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+//--COURSE ONE--//
+
+.courseOne {
+  @include grid(31rem);
+
+  &__box {
+    background: var(--light-bg);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 3rem 2rem;
+
+    img {
+      margin-bottom: 1rem;
+      height: 8rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: var(--black);
+      padding: 0.5rem 0;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: var(--light-color);
+      line-height: 2.5;
+      padding: 1rem 0;
+    }
+  }
+}
